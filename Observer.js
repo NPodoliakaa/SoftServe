@@ -1,4 +1,4 @@
-class Observer{
+class Observer {
     constructor() {
         this._subscribers = [];
         this._once = [];
@@ -19,6 +19,16 @@ class Observer{
     }
     once(callback){
         this._once.push(callback);
+    }
+    unsubscribeAll() {
+        this._subscribers = [];
+        this._once = [];
+    }
+    countSubscribers(){
+        return this._subscribers.length + this._once.length;
+    }
+    isConsist (callback){
+        return this._subscribers.some((subscriber) => subscriber == callback);
     }
 }
 
@@ -52,7 +62,6 @@ class News {
     //
     //     return this._news;
     // }
-
 }
 
 const obs = new Observer();
@@ -61,18 +70,31 @@ const news = new News();
 let user1 = new User("firstUser");
 let user2 = new User("secondUser");
 let user3 = new User("thirdUser");
+let user4 = new User("someUser");
 
-let user1Context = user1.receive.bind(user1)
-let user2Context = user2.receive.bind(user2)
-let user3Context = user3.receive.bind(user3)
+let user1Context = user1.receive.bind(user1);
+let user2Context = user2.receive.bind(user2);
+let user3Context = user3.receive.bind(user3);
+let user4Context = user4.receive.bind(user4);
 
 obs.subscribe(user1Context);
 obs.subscribe(user2Context);
-obs.once(user3Context);
+obs.subscribe(user3Context);
 obs.notify(news.generateNews());
+console.log();
+
+obs.once(user4Context);
+obs.notify(news.generateNews());
+console.log();
+obs.notify(news.generateNews());
+console.log();
+
+console.log(obs.countSubscribers());
+console.log(obs.isConsist(user1Context));
+console.log(obs.isConsist(user4Context));
+console.log();
 
 obs.unsubscribe(user1Context);
 obs.notify(news.generateNews());
-
-//setTimeout(() => obs.unsubscribe(user1), 4000);
-//obs.notify(news.generateIntervals());
+obs.unsubscribeAll();
+obs.notify(news.generateNews());
