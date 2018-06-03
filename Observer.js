@@ -17,18 +17,18 @@ class Observer {
         this._once.forEach((subscriber) => subscriber(data));
         this._once = [];
     }
-    once(callback){
+    once(callback) {
         this._once.push(callback);
     }
     unsubscribeAll() {
         this._subscribers = [];
         this._once = [];
     }
-    countSubscribers(){
-        return this._subscribers.length + this._once.length;
+    countSubscribers() {
+        return this._subscribers.length;
     }
-    isConsist (callback){
-        return this._subscribers.some((subscriber) => subscriber == callback);
+    isConsist(callback) {
+        return this._subscribers.some((subscriber) => subscriber === callback);
     }
 }
 
