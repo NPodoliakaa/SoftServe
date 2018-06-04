@@ -70,8 +70,7 @@ class EventEmitter {
         }
     }
     subscribe(category, callback) {
-        if (Object.keys(this._subscribers) &&
-            Object.keys(this._subscribers).every((group) => group !== category)){
+        if (Object.keys(this._subscribers).every((group) => group !== category)){
            this._subscribers[category] = [];
        }
        this._subscribers[category].push(callback);
@@ -83,7 +82,7 @@ class EventEmitter {
         }
     }
     emit(data, category) {
-       if ( Object.keys(this._subscribers).some((group) => group === category)){
+       if (Object.keys(this._subscribers).some((group) => group === category)){
            let group = this._subscribers[category];
            group.forEach((subscriber) => subscriber(data));
        }
