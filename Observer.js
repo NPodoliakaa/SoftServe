@@ -1,3 +1,5 @@
+"use strict";
+
 class Observer {
     constructor() {
         this._subscribers = [];
@@ -15,14 +17,14 @@ class Observer {
     notify(data) {
         this._subscribers.forEach((subscriber) => subscriber(data));
         this._once.forEach((subscriber) => subscriber(data));
-        this._once = [];
+        this._once.length = 0;
     }
     once(callback) {
         this._once.push(callback);
     }
     unsubscribeAll() {
-        this._subscribers = [];
-        this._once = [];
+        this._subscribers.length = 0;
+        this._once.length = 0;
     }
     countSubscribers() {
         return this._subscribers.length;
@@ -35,66 +37,117 @@ class Observer {
 class User {
     constructor(name) {
         this._name = name || "noName";
+        this.receive = this.receive.bind(this);
     }
     receive(data){
-        console.log(`${this._name} got notification from Observer -> ${data}`);
+        console.log(`${this._name} got news -> ${data}`);
     }
 }
 
 class News {
-    // constructor(news){
-    //     this._news = news;
-    // }
-    generateNews() {
-       let news = '';
-        while (news.length < 44)
-           news += String.fromCharCode(20 + Math.random() * 107); //random Unicode symbol from 20 to 127 (not including)
-        return news;
+    constructor(object){
+        this._object = object;
     }
-    // generateIntervals(){
-    //     let publication = setInterval(function () {
-    //         news.generateNews();
-    //     }, 2000);
-    //
-    //     setTimeout(() => {
-    //         clearInterval(publication)
-    //     }, 5000);
-    //
-    //     return this._news;
-    // }
+    generateNews(category) {
+        let news = '';
+        while (news.length < 44) {
+            news += String.fromCharCode(20 + Math.random() * 107); //random Unicode symbol from 20 to 127 (not including)
+        }
+        if (this._object instanceof Observer){
+            this._object.notify(news);
+        } else
+        if (this._object instanceof EventEmitter){
+            this._object.emit(news, category);
+        }
+    }
+}
+
+class EventEmitter {
+    constructor(categories) {
+        this._subscribers = {};
+        if (categories){
+            categories.forEach((category) => this._subscribers[category] = [] );
+        }
+    }
+    subscribe(category, callback) {
+        if (Object.keys(this._subscribers) &&
+            Object.keys(this._subscribers).every((group) => group !== category)){
+           this._subscribers[category] = [];
+       }
+       this._subscribers[category].push(callback);
+    }
+    unsubscribe(category, callback) {
+        this._subscribers[category] = this._subscribers[category].filter(subscriber => subscriber !== callback);
+        if (this._subscribers[category].length === 0){
+            delete this._subscribers[category];
+        }
+    }
+    emit(data, category) {
+       if ( Object.keys(this._subscribers).some((group) => group === category)){
+           let group = this._subscribers[category];
+           group.forEach((subscriber) => subscriber(data));
+       }
+    }
 }
 
 const obs = new Observer();
-const news = new News();
+const news = new News(obs);
 
 let user1 = new User("firstUser");
 let user2 = new User("secondUser");
 let user3 = new User("thirdUser");
 let user4 = new User("someUser");
 
-let user1Context = user1.receive.bind(user1);
-let user2Context = user2.receive.bind(user2);
-let user3Context = user3.receive.bind(user3);
-let user4Context = user4.receive.bind(user4);
-
-obs.subscribe(user1Context);
-obs.subscribe(user2Context);
-obs.subscribe(user3Context);
-obs.notify(news.generateNews());
+obs.subscribe(user1.receive);
+obs.subscribe(user2.receive);
+obs.subscribe(user3.receive);
+news.generateNews();
 console.log();
 
-obs.once(user4Context);
-obs.notify(news.generateNews());
+obs.once(user4.receive);
+news.generateNews();
 console.log();
-obs.notify(news.generateNews());
+news.generateNews();
 console.log();
 
 console.log(obs.countSubscribers());
-console.log(obs.isConsist(user1Context));
-console.log(obs.isConsist(user4Context));
+console.log(obs.isConsist(user1.receive));
+console.log(obs.isConsist(user4.receive));
 console.log();
 
-obs.unsubscribe(user1Context);
-obs.notify(news.generateNews());
+obs.unsubscribe(user1.receive);
+news.generateNews();
 obs.unsubscribeAll();
-obs.notify(news.generateNews());
+news.generateNews();
+
+
+const emitter = new EventEmitter();
+const journalist1 = new News(emitter);
+const journalist2 = new News(emitter);
+const journalist3 = new News(emitter);
+
+emitter.subscribe("sport", user1.receive);
+emitter.subscribe("sport", user2.receive);
+emitter.subscribe("sport", user3.receive);
+emitter.subscribe("it", user3.receive);
+emitter.subscribe("it", user4.receive);
+emitter.subscribe("music", user2.receive);
+emitter.subscribe("music", user3.receive);
+
+console.log("\nSport: ");
+journalist1.generateNews("sport");
+console.log("It: ");
+journalist2.generateNews("it");
+console.log("Music: ");
+journalist3.generateNews("music");
+
+emitter.unsubscribe("sport", user1.receive);
+emitter.unsubscribe("sport", user2.receive);
+emitter.unsubscribe("sport", user3.receive);
+
+console.log("\nSport: ");
+journalist1.generateNews("sport");
+console.log("It: ");
+journalist2.generateNews("it");
+console.log("Music: ");
+journalist3.generateNews("music");
