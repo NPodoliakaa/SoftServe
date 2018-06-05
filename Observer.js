@@ -70,19 +70,21 @@ class EventEmitter {
         }
     }
     subscribe(category, callback) {
-        if (Object.keys(this._subscribers).every((group) => group !== category)){
+        if(!(category in this._subscribers)) {
            this._subscribers[category] = [];
-       }
-       this._subscribers[category].push(callback);
+        }
+        this._subscribers[category].push(callback);
     }
     unsubscribe(category, callback) {
-        this._subscribers[category] = this._subscribers[category].filter(subscriber => subscriber !== callback);
-        if (this._subscribers[category].length === 0){
-            delete this._subscribers[category];
+        if(category in this._subscribers) {
+            this._subscribers[category] = this._subscribers[category].filter(subscriber => subscriber !== callback);
+            if (this._subscribers[category].length === 0) {
+                delete this._subscribers[category];
+            }
         }
     }
     emit(data, category) {
-       if (Object.keys(this._subscribers).some((group) => group === category)){
+        if(category in this._subscribers){
            let group = this._subscribers[category];
            group.forEach((subscriber) => subscriber(data));
        }
