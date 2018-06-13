@@ -14,9 +14,9 @@ function requestHandler (request, response) {
             let body = [];
             request.on('data', (chunk) => {
                 body.push(chunk);
-                body = body.toString();
             });
             request.on('end', () => {
+                body = body.toString();
                 body = JSON.stringify(body);
                 fs.writeFile("./data.txt", body, 'utf8', function (err) {
                     if (err) {
