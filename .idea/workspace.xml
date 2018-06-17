@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62f5b1b2-8f3c-4dca-9150-0cfb2e26b662" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/news.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task 2 - Server, Form/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Task 2 - Server, Form/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task 2 - Server, Form/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task 2 - Server, Form/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,17 +22,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Task 2 - Server, Form/server.js">
+        <entry file="file://$PROJECT_DIR$/Task 3 - News portal/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="520">
+              <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task 2 - Server, Form/data.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 3 - News portal/service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventEmitter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task 3 - News portal/news.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -41,8 +75,21 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>server.j</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Task 3 - News portal/news.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Task 3 - News portal/user.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Task 3 - News portal/server.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Task 2 - Server, Form/server.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Task 3 - News portal/service.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,6 +97,14 @@
         <option value="$PROJECT_DIR$/try.js" />
         <option value="$PROJECT_DIR$/Observer.js" />
         <option value="$PROJECT_DIR$/Task 2 - Server, Form/server.js" />
+        <option value="$PROJECT_DIR$/Task 3 - News portal/app.js" />
+        <option value="$PROJECT_DIR$/Task 3 - News portal/controller.js" />
+        <option value="$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js" />
+        <option value="$PROJECT_DIR$/Task 3 - News portal/news.js" />
+        <option value="$PROJECT_DIR$/Task 3 - News portal/user.js" />
+        <option value="$PROJECT_DIR$/Task 3 - News portal/exportUser.json" />
+        <option value="$PROJECT_DIR$/Task 3 - News portal/server.js" />
+        <option value="$PROJECT_DIR$/Task 3 - News portal/service.js" />
       </list>
     </option>
   </component>
@@ -63,9 +118,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="529" />
-    <option name="width" value="828" />
-    <option name="height" value="780" />
+    <option name="y" value="332" />
+    <option name="width" value="768" />
+    <option name="height" value="396" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -83,12 +138,7 @@
             <path>
               <item name="SoftServe" type="b2602c69:ProjectViewProjectNode" />
               <item name="SoftServe" type="462c0819:PsiDirectoryNode" />
-              <item name="Task 1 - Observer, EventEmitter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SoftServe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SoftServe" type="462c0819:PsiDirectoryNode" />
-              <item name="Task 2 - Server, Form" type="462c0819:PsiDirectoryNode" />
+              <item name="Task 3 - News portal" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -98,10 +148,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Task 3 - News portal/server.js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -120,16 +170,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.Observer.js">
-    <configuration name="Observer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="Observer.js" working-dir="$PROJECT_DIR$" />
+  <component name="RunManager" selected="Node.js.server.js">
+    <configuration name="server.js JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:8080/user/1" />
+    <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="Task 3 - News portal/server.js" working-dir="$PROJECT_DIR$">
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+        <browser start="true" with-js-debugger="true" url="http://localhost:8080/user/1" />
+      </EXTENSION>
+    </configuration>
     <configuration name="try.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="try.js" working-dir="$PROJECT_DIR$" />
     <list>
-      <item itemvalue="Node.js.Observer.js" />
+      <item itemvalue="JavaScript Debug.server.js JavaScript" />
+      <item itemvalue="Node.js.server.js" />
       <item itemvalue="Node.js.try.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.Observer.js" />
+        <item itemvalue="Node.js.server.js" />
         <item itemvalue="Node.js.try.js" />
       </list>
     </recent_temporary>
@@ -166,7 +222,8 @@
       <workItem from="1528219138933" duration="2246000" />
       <workItem from="1528221929126" duration="340000" />
       <workItem from="1528828005950" duration="959000" />
-      <workItem from="1528916198345" duration="312000" />
+      <workItem from="1528916198345" duration="34388000" />
+      <workItem from="1529226514078" duration="8495000" />
     </task>
     <task id="LOCAL-00001" summary="Task 1: class Observer">
       <created>1527803152538</created>
@@ -217,26 +274,34 @@
       <option name="project" value="LOCAL" />
       <updated>1528222141565</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Task 2: fix code">
+      <created>1528916538166</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528916538166</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51503000" />
+    <option name="totallyTimeSpent" value="94074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21669106" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13762811" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.4499205" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49926794" weight="0.25596184" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.38155803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4499205" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49926794" weight="0.31319556" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -244,8 +309,27 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3290938" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13762811" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38155803" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49926794" weight="0.25596184" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49926794" weight="0.31319556" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50073206" side_tool="true" weight="0.4499205" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3290938" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -259,11 +343,12 @@
     <MESSAGE value="Task 1: add methods 'unsubscribeAll', 'countSubscribers', 'isConsist'" />
     <MESSAGE value="Task 1: add implementation of class 'EventEmitter'" />
     <MESSAGE value="Task 1: fix class 'EventEmitter'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 1: fix class 'EventEmitter'" />
+    <MESSAGE value="Task 2: fix code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 2: fix code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="93" />
+      <option name="time" value="99" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -306,6 +391,41 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Task 2 - Server, Form/server.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -338,11 +458,71 @@
     <entry file="file://$PROJECT_DIR$/Observer.js" />
     <entry file="file://$PROJECT_DIR$/Task 2 - Server, Form/data.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 1 - Observer, EventEmitter/Observer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="91" column="1" lean-forward="true" selection-start-line="36" selection-end-line="91" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/app.js" />
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/controller.js" />
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_1529230418142.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/exportUser.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 2 - Server, Form/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="275">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_undefined.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
         </state>
       </provider>
     </entry>
