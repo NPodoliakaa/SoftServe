@@ -1,5 +1,6 @@
 const http = require('http');
 const url = require('url');
+const fs = require('fs');
 const User = require('./user');
 const News = require('./news');
 const EventEmitter = require('./eventEmitter');
@@ -19,7 +20,10 @@ function router(request, response) {
                 response.write(service.getSubscriptions(array[2]));
             }
             else if (array[3] == 'export') {
-                service.exportUser(array[2]);
+                response.writeHead(200, {"Content-Type": "application/json"});
+                let path = service.exportUser(array[2]);
+                response.write(JSON.stringify(path));
+                // fs.createReadStream(path).pipe(response);
             }
             else if (array.length === 3) {
                 response.writeHead(200, {"Content-Type": "application/json"});

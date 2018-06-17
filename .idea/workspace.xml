@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62f5b1b2-8f3c-4dca-9150-0cfb2e26b662" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/news.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task 3 - News portal/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3 - News portal/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task 3 - News portal/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3 - News portal/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/Task 3 - News portal/service.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task 3 - News portal/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -33,8 +30,8 @@
       <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task 3 - News portal/service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+            <state>
+              <caret selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -103,8 +100,8 @@
         <option value="$PROJECT_DIR$/Task 3 - News portal/news.js" />
         <option value="$PROJECT_DIR$/Task 3 - News portal/user.js" />
         <option value="$PROJECT_DIR$/Task 3 - News portal/exportUser.json" />
-        <option value="$PROJECT_DIR$/Task 3 - News portal/server.js" />
         <option value="$PROJECT_DIR$/Task 3 - News portal/service.js" />
+        <option value="$PROJECT_DIR$/Task 3 - News portal/server.js" />
       </list>
     </option>
   </component>
@@ -223,7 +220,8 @@
       <workItem from="1528221929126" duration="340000" />
       <workItem from="1528828005950" duration="959000" />
       <workItem from="1528916198345" duration="34388000" />
-      <workItem from="1529226514078" duration="8495000" />
+      <workItem from="1529226514078" duration="8749000" />
+      <workItem from="1529245798987" duration="1652000" />
     </task>
     <task id="LOCAL-00001" summary="Task 1: class Observer">
       <created>1527803152538</created>
@@ -281,21 +279,26 @@
       <option name="project" value="LOCAL" />
       <updated>1528916538166</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Task 3: add implementation of router and service">
+      <created>1529238583857</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1529238583857</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94074000" />
+    <option name="totallyTimeSpent" value="95980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13762811" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15373352" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.4499205" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49926794" weight="0.25596184" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.38155803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -309,24 +312,25 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3290938" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49926794" weight="0.25596184" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13762811" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.38155803" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49926794" weight="0.25596184" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49926794" weight="0.31319556" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50073206" side_tool="true" weight="0.4499205" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49926794" weight="0.25596184" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3290938" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
@@ -344,7 +348,8 @@
     <MESSAGE value="Task 1: add implementation of class 'EventEmitter'" />
     <MESSAGE value="Task 1: fix class 'EventEmitter'" />
     <MESSAGE value="Task 2: fix code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 2: fix code" />
+    <MESSAGE value="Task 3: add implementation of router and service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 3: add implementation of router and service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -391,6 +396,34 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Task 3 - News portal/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -468,19 +501,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task 3 - News portal/app.js" />
     <entry file="file://$PROJECT_DIR$/Task 3 - News portal/controller.js" />
-    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_1529230418142.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/exportUser.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_1529230418142.json" />
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_.json" />
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/exportUser.json" />
     <entry file="file://$PROJECT_DIR$/Task 2 - Server, Form/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -488,23 +511,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_undefined.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_undefined.json" />
     <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -519,10 +526,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/eventEmitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_1_17h38min.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task 3 - News portal/user_3_17h54min.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Task 3 - News portal/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        <state relative-caret-position="357">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
         </state>
       </provider>
     </entry>

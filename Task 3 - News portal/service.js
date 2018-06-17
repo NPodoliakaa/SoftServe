@@ -43,18 +43,14 @@ class Service {
         //URL: /user/<id>/export
         let user = this.getUserById(id);
         let message = JSON.stringify(user);
-        // let date = new Date(Date.now()).toLocaleString();
-        // date = date.split(" ")[1];
-        // console.log(date);
-        // let path = `user_${id}_${date}.json`;
-        // console.log(path);
-        // fs.writeFile(`./user_${id}_${date}.json`, message, 'utf8', (err) => {
-        fs.writeFile(`./user_${id}_.json`, message, 'utf8', (err) => {
+        let date = new Date();
+        let path = `./user_${id}_${date.getHours()}h${date.getMinutes()}min.json`;
+        fs.writeFile(path, message, 'utf8', (err) => {
             if (err) {
                 return err;
             }
         });
-
+        return path;
     }
 
     getNewsById(id) {
