@@ -20,10 +20,9 @@ function router(request, response) {
                 response.write(service.getSubscriptions(array[2]));
             }
             else if (array[3] == 'export') {
-                response.writeHead(200, {"Content-Type": "application/json"});
                 let path = service.exportUser(array[2]);
-                response.write(JSON.stringify(path));
-                // fs.createReadStream(path).pipe(response);
+                response.writeHead(200, {"Content-Type": "application/json"});
+                const stream = fs.createReadStream(`${path}`).pipe(response);
             }
             else if (array.length === 3) {
                 response.writeHead(200, {"Content-Type": "application/json"});
@@ -63,5 +62,4 @@ function router(request, response) {
         response.statusCode = 404;
         response.write("URL is incorrect.");
     }
-    response.end();
 }
